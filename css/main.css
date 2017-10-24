@@ -1,0 +1,31 @@
+.left-eye, .right-eye {
+  transform: translateX(0);
+  transform-origin: 6.4px;
+  animation: eye-move 3s infinite alternate;
+}
+
+#left-ear, #right-ear {
+  transform: translateY(0);
+  transform-origin: 34px 34px;
+  transition: all .5s linear;
+}
+
+#bear:hover #right-ear {
+  transform: translateY(-10px);
+}
+
+#bear:hover #left-ear {
+  transform: translateY(-10px);
+}
+
+@keyframes eye-move {
+
+  0% {
+    transform: translateX(15px);
+  }
+
+  100% {
+    transform: translateX(-15px);
+  }
+
+}
